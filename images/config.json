@@ -1,0 +1,495 @@
+{
+  "description": "Remplace les images en conservant leur nom. Active les fonds par écran et la bannière uniquement si souhaité.",
+  "images": [
+    {
+      "id": "background-0",
+      "usage": "background:0",
+      "file": "backgrounds/0.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/0.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "background-1",
+      "usage": "background:1",
+      "file": "backgrounds/1.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/1.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "background-2",
+      "usage": "background:2",
+      "file": "backgrounds/2.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/2.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "background-3",
+      "usage": "background:3",
+      "file": "backgrounds/3.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/3.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "background-4",
+      "usage": "background:4",
+      "file": "backgrounds/4.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/4.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "background-5",
+      "usage": "background:5",
+      "file": "backgrounds/5.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/5.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "background-6",
+      "usage": "background:6",
+      "file": "backgrounds/6.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/6.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "background-7",
+      "usage": "background:7",
+      "file": "backgrounds/7.jpg",
+      "enabled": true,
+      "fallbackAsset": "backgrounds/7.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "screen-welcome",
+      "usage": "background:welcome",
+      "file": "backgrounds/welcome.jpg",
+      "enabled": false,
+      "fallbackAsset": "backgrounds/0.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "screen-account",
+      "usage": "background:account",
+      "file": "backgrounds/account.jpg",
+      "enabled": false,
+      "fallbackAsset": "backgrounds/0.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "screen-main",
+      "usage": "background:main",
+      "file": "backgrounds/main.jpg",
+      "enabled": false,
+      "fallbackAsset": "backgrounds/0.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "screen-settings",
+      "usage": "background:settings",
+      "file": "backgrounds/settings.jpg",
+      "enabled": false,
+      "fallbackAsset": "backgrounds/0.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "screen-optional-mods",
+      "usage": "background:optional-mods",
+      "file": "backgrounds/optional-mods.jpg",
+      "enabled": false,
+      "fallbackAsset": "backgrounds/0.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "screen-loading",
+      "usage": "background:loading",
+      "file": "backgrounds/loading.jpg",
+      "enabled": false,
+      "fallbackAsset": "backgrounds/0.jpg",
+      "recommendedWidth": 1920,
+      "recommendedHeight": 1080,
+      "displayMode": {
+        "fit": "cover",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "logo-welcome",
+      "usage": "illustration:welcome",
+      "file": "logos/welcome.png",
+      "enabled": true,
+      "fallbackAsset": "NindoCraft.svg",
+      "recommendedWidth": 256,
+      "recommendedHeight": 256,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "logo-main",
+      "usage": "illustration:main",
+      "file": "logos/main.png",
+      "enabled": true,
+      "fallbackAsset": "NindoCraft.svg",
+      "recommendedWidth": 256,
+      "recommendedHeight": 256,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "logo-loading",
+      "usage": "illustration:loading",
+      "file": "logos/loading.png",
+      "enabled": true,
+      "fallbackAsset": "NindoCraft.svg",
+      "recommendedWidth": 256,
+      "recommendedHeight": 256,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "logo-settings",
+      "usage": "illustration:settings",
+      "file": "logos/settings.png",
+      "enabled": true,
+      "fallbackAsset": "NindoCraft.svg",
+      "recommendedWidth": 256,
+      "recommendedHeight": 256,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "banner-main",
+      "usage": "banner:main",
+      "file": "logos/banner.png",
+      "enabled": false,
+      "fallbackAsset": "NindoCraft.png",
+      "recommendedWidth": 1200,
+      "recommendedHeight": 300,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "icon-optional-mods",
+      "usage": "icon:optional-mods",
+      "file": "icons/optional-mods.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "icon-settings",
+      "usage": "icon:settings",
+      "file": "icons/settings.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "icon-discord",
+      "usage": "icon:discord",
+      "file": "icons/discord.png",
+      "enabled": true,
+      "fallbackAsset": "icons/discord.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "icon-link",
+      "usage": "icon:link",
+      "file": "icons/link.png",
+      "enabled": true,
+      "fallbackAsset": "icons/link.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "icon-account",
+      "usage": "icon:account",
+      "file": "icons/account.png",
+      "enabled": true,
+      "fallbackAsset": "icons/profile.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "icon-application",
+      "usage": "icon:application",
+      "file": "icons/application.png",
+      "enabled": true,
+      "fallbackAsset": "NindoCraft.png",
+      "recommendedWidth": 256,
+      "recommendedHeight": 256,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-appleskin",
+      "usage": "icon:mod:appleskin",
+      "file": "icons/mods/appleskin.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-betterf1",
+      "usage": "icon:mod:betterf1",
+      "file": "icons/mods/betterf1.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-chat_heads",
+      "usage": "icon:mod:chat_heads",
+      "file": "icons/mods/chat_heads.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-controlling",
+      "usage": "icon:mod:controlling",
+      "file": "icons/mods/controlling.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-longerchathistory",
+      "usage": "icon:mod:longerchathistory",
+      "file": "icons/mods/longerchathistory.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-mousetweaks",
+      "usage": "icon:mod:mousetweaks",
+      "file": "icons/mods/mousetweaks.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-skinlayers3d",
+      "usage": "icon:mod:skinlayers3d",
+      "file": "icons/mods/skinlayers3d.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-voxy",
+      "usage": "icon:mod:voxy",
+      "file": "icons/mods/voxy.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-searchables",
+      "usage": "icon:mod:searchables",
+      "file": "icons/mods/searchables.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    },
+    {
+      "id": "mod-icon-sodium",
+      "usage": "icon:mod:sodium",
+      "file": "icons/mods/sodium.png",
+      "enabled": true,
+      "fallbackAsset": "icons/settings.svg",
+      "recommendedWidth": 64,
+      "recommendedHeight": 64,
+      "displayMode": {
+        "fit": "contain",
+        "position": "center",
+        "allowStretch": false
+      }
+    }
+  ]
+}

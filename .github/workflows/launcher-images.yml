@@ -1,0 +1,35 @@
+name: Mettre à jour les images du launcher
+on:
+  push:
+    branches: [main]
+    paths: ['images/**', 'scripts/build-images-manifest.cjs', '.github/workflows/launcher-images.yml']
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: launcher-images
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.event_name != 'release' || !github.event.release.prerelease
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Vérifier les images et calculer le manifeste
+        run: IMAGE_SOURCE_REVISION="$(git rev-parse HEAD)" node scripts/build-images-manifest.cjs
+      - name: Publier uniquement le manifeste des images dans la release Latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName --jq '.tagName')"
+          gh release upload "$tag" image-publish/launcher-assets.json --clobber --repo "$GITHUB_REPOSITORY"
