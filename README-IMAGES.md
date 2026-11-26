@@ -6,7 +6,7 @@ Dépôt cible public : ShaoJun18/NindoCraft-Modpack. Nécessite le launcher 1.0.
 
 1. Décompresser le paquet puis déposer son CONTENU à la racine du dépôt existant, sur main. Conserver les chemins images/, scripts/ et .github/workflows/. Ne pas remplacer ton README existant.
 2. Activer GitHub Actions si demandé, puis ouvrir Actions → Mettre à jour les images du launcher. Le workflow demande uniquement contents:write pour remplacer launcher-assets.json dans la release Latest existante. Aucun token personnel ni secret à configurer.
-3. Si le workflow ne s’exécute pas après l’envoi, cliquer Run workflow sur main. Une release publique normale doit déjà exister (modpack-1.0.1 actuellement). Le workflow n’en crée aucune et ne change pas Latest.
+3. Si le workflow ne s’exécute pas après l’envoi, cliquer Run workflow sur main. Une release publique normale doit déjà exister (la release Latest du modpack). Le workflow n’en crée aucune et ne change pas Latest. Il publie aussi le manifeste dans la release permanente `launcher-assets`.
 4. Vérifier que le workflow passe au vert, puis installer une fois NindoCraft Launcher 1.0.21 et le redémarrer.
 
 ## Remplacer une image depuis le site GitHub
@@ -28,8 +28,9 @@ PNG/JPG/WebP seulement : conserver l’extension correcte ou modifier file dans 
 Pour annuler : désactiver l’entrée avec enabled:false ou remettre l’ancien fichier dans GitHub. Les fichiers utilisent une URL raw liée au commit exact et sont vérifiés par hash/taille et décodage. Une image corrompue conserve la précédente ; si aucun cache utilisable n’existe, la ressource locale sert de secours. Au premier démarrage, l’écran initial utilise le secours jusqu’à la disponibilité des fichiers ; les démarrages suivants lisent le cache dès le chargement.
 
 Le manifeste reste accessible ici : https://github.com/ShaoJun18/NindoCraft-Modpack/releases/latest/download/launcher-assets.json
+Copie permanente, indépendante des versions du modpack : https://github.com/ShaoJun18/NindoCraft-Modpack/releases/download/launcher-assets/launcher-assets.json
 Les images sont lues via https://raw.githubusercontent.com/ShaoJun18/NindoCraft-Modpack/<commit>/images/<fichier>
 
-Les nouvelles releases normales du modpack déclenchent aussi le workflow : il reprend les images de main pour actualiser leur manifeste dans Latest. Aucun fichier version.json, manifest.json, modpack.zip ou optional-mods.json n’est modifié. Ne pas donner à une nouvelle release de modpack le nom launcher-images ; les fichiers d’images restent indépendants de sa version.
+Les nouvelles releases normales du modpack déclenchent aussi le workflow : il reprend les images de main pour actualiser leur manifeste dans Latest. Aucun fichier version.json, manifest.json, modpack.zip ou optional-mods.json n’est modifié. Ne pas donner à une release de modpack le nom launcher-images ou launcher-assets ; les fichiers d’images restent indépendants de sa version.
 
 Documentation : https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax

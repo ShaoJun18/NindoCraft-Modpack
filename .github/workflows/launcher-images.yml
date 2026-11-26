@@ -26,10 +26,21 @@ jobs:
           node-version: '22'
       - name: Vérifier les images et calculer le manifeste
         run: IMAGE_SOURCE_REVISION="$(git rev-parse HEAD)" node scripts/build-images-manifest.cjs
-      - name: Publier uniquement le manifeste des images dans la release Latest
+      - name: Publier uniquement le manifeste des images dans la release Latest et dans launcher-assets
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          # Latest : lu par les launchers installés (releases/latest/download/launcher-assets.json).
           tag="$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName --jq '.tagName')"
+          if [ "$tag" = "launcher-assets" ]; then
+            echo "::error::launcher-assets ne doit jamais être Latest : corriger la release Latest avant de publier."
+            exit 1
+          fi
           gh release upload "$tag" image-publish/launcher-assets.json --clobber --repo "$GITHUB_REPOSITORY"
+          # Release permanente (pré-version, jamais Latest) : copie indépendante des versions du modpack.
+          if gh release view launcher-assets --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload launcher-assets image-publish/launcher-assets.json --clobber --repo "$GITHUB_REPOSITORY"
+          else
+            echo "::warning::release launcher-assets absente : manifeste publié dans Latest uniquement."
+          fi
